@@ -103,7 +103,7 @@ const Login = () => {
           <div className="text-sm text-center text-gray-600 dark:text-gray-400">
             Demo Credentials:
             <br />
-            Username: DEMO | Password: PASSWORD
+            Username: DEMO | Password: 19protocol
           </div>
         </form>
       </div>
