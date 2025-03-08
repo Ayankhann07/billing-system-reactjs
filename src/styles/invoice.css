@@ -1,0 +1,189 @@
+.invoice-container {
+  @apply bg-white dark:bg-gray-800;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
+.header h2 {
+  @apply text-gray-900 dark:text-white;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.invoice-number {
+  font-size: 18px;
+  color: #dc2626;
+  font-weight: 500;
+}
+
+.customer-section,
+.items-section,
+.payment-section {
+  @apply bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 24px;
+  border-width: 1px;
+  border-style: solid;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.checkbox {
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-label {
+  @apply text-gray-700 dark:text-gray-300;
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.form-input {
+  @apply bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white;
+  border-radius: 4px;
+  padding: 8px 12px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus {
+  @apply border-indigo-500 ring-2 ring-indigo-200 dark:ring-indigo-800;
+  outline: none;
+}
+
+.form-input.readonly {
+  @apply bg-gray-100 dark:bg-gray-700;
+  cursor: not-allowed;
+}
+
+.radio-group {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  cursor: pointer;
+}
+
+.items-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 16px;
+}
+
+.items-table th {
+  @apply bg-gray-50 dark:bg-gray-700 text-gray-700 dark:text-gray-300 border-gray-200 dark:border-gray-600;
+  padding: 12px;
+  text-align: left;
+  font-size: 13px;
+  font-weight: 600;
+  border-bottom-width: 2px;
+}
+
+.items-table td {
+  @apply text-gray-900 dark:text-gray-100 border-gray-200 dark:border-gray-600;
+  padding: 12px;
+  border-bottom-width: 1px;
+  font-size: 14px;
+}
+
+.empty-message {
+  @apply text-gray-500 dark:text-gray-400;
+  text-align: center;
+  font-style: italic;
+}
+
+.date-field {
+  position: relative;
+}
+
+.calendar-icon {
+  @apply text-gray-500 dark:text-gray-400;
+  position: absolute;
+  right: 8px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 16px;
+  height: 16px;
+  pointer-events: none;
+}
+
+.add-btn {
+  @apply bg-indigo-600 hover:bg-indigo-700 text-white;
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-top: 24px;
+}
+
+.save-btn {
+  @apply bg-red-600 hover:bg-red-700 text-white;
+  padding: 10px 24px;
+  border-radius: 4px;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  margin-left: auto;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+}
+/* styles.css */
+.dropdown-container {
+  position: absolute;
+  width: 228px;
+  margin-top: 70px;
+  border-radius: 6px;
+  border: 1px solid #d1d5db; /* Gray-300 */
+  background-color: #374151; /* Dark gray-700 */
+  color: white;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-item {
+  padding: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.dropdown-item:hover {
+  background-color: #6366f1; /* Indigo-500 */
+  color: white;
+}

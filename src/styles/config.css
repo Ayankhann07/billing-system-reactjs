@@ -1,0 +1,128 @@
+.config-container {
+    @apply bg-white dark:bg-gray-800;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 24px;
+    height: 900px;
+    margin: 0 ;
+  }
+  /* Sidebar Styles */
+.sidebar {
+    @apply bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600;
+    width: 25%; /* Equivalent to w-1/4 */
+    background-color: #e5e7eb; /* Equivalent to bg-gray-200 */
+    padding: 1rem; /* Equivalent to p-4 */
+    height: 50vh; /* Equivalent to h-screen */
+    display: flex;
+    border-radius: 10px;
+    
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    color: #2563eb; /* Equivalent to text-blue-600 */
+    font-weight: 600; /* Equivalent to font-semibold */
+    cursor: pointer;
+    padding: 12px 0;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar li:hover {
+    text-decoration: underline;
+    color: #1e40af; /* Darker blue on hover */
+}
+
+  
+  .config-title {
+    @apply text-gray-900 dark:text-white;
+    font-size: 24px;
+    margin-bottom: 24px;
+    font-weight: 600;
+  }
+  
+  .config-form {
+    @apply bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600;
+    border-radius: 6px;
+    padding: 16px;
+    margin-bottom: 24px;
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  .form-row {
+    @apply text-gray-700 dark:text-gray-300;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-label {
+    @apply text-gray-700 dark:text-gray-300;
+    font-size: 14px;
+    margin-bottom: 6px;
+    font-weight: 500;
+  }
+  
+  .form-input {
+    @apply bg-white dark:bg-gray-800 border-gray-300 dark:border-gray-600 text-gray-900 dark:text-white;
+    border-radius: 4px;
+    padding: 8px 12px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+    border-width: 1px;
+    border-style: solid;
+  }
+  
+  .form-input:focus {
+    @apply border-indigo-500 ring-2 ring-indigo-200 dark:ring-indigo-800;
+    outline: none;
+  }
+  
+  .config-buttons {
+    display: flex;
+    gap: 8px;
+    margin-top: 24px;
+  }
+  
+  .save-btn {
+    @apply bg-indigo-600 hover:bg-indigo-700 text-white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .cancel-btn {
+    @apply bg-gray-600 hover:bg-gray-700 text-white;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .add-company{
+    @apply bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600;
+    @apply bg-white dark:bg-gray-800;
+    margin-left: 400px;
+    margin-top: -400px;
+  }
+  .border-text-center{
+    @apply bg-gray-50 dark:bg-gray-700 border-gray-200 dark:border-gray-600;
+  }
+
+ 
